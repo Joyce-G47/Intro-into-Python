@@ -1,1 +1,35 @@
+#Functions
 
+ Functions are block of reusable code that is made easy to read and understand every time it's called each time the operation needs to be carried out.
+
+def: This keyword is used to define a function.
+
+function_name: This is the name of the function. It should be descriptive and follow the naming conventions. Function names are followed by parentheses ().
+
+parameters: These are the inputs to the function. You can pass zero or more parameters to a function.
+
+Docstring: It's an optional string that describes what the function does. It's good practice to include docstrings to document your functions.
+
+return: This keyword is used to return a value from the function. A function can return zero or more values.
+
+#Control Flow Statement
+
+A program’s control flow is the order in which the program’s code executes.
+
+The control flow of a Python program is regulated by conditional statements, loops, and function calls.
+
+Python has three types of control structures:
+
+ 
+
+·         Sequential - default mode
+
+·         Selection - used for decisions and branching
+
+·         Repetition - used for looping, i.e., repeating a piece of code multiple times.
+
+#Modules
+
+In Python, a module is a file that contains Python definitions and statements. The file name is the module name with the suffix .py added. For example, if you have a file named example.py, it can be imported as a module in another Python script.
+
+Modules are used to organize Python code and make it more manageable. They allow you to logically organize your Python code, group related code into a single file, and reuse code in different programs.
