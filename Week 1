@@ -5,3 +5,74 @@ Python can be used alongside software to create workflows.
 Python can connect to database systems. It can also read and modify files.
 Python can be used to handle big data and perform complex mathematics.
 Python can be used for rapid prototyping, or for production-ready software development.
+
+# Variables
+
+A designated area in the computer's memory that is used to store data is called a variable in Python. A variable can be thought of as a container for a value. Variables let you work with and change data in your programs by storing various kinds of data, including objects, strings, and integers.
+Variable is a name attached to a value which can be changed and is used later in the code. No need of declaration.
+Python has a powerful feature regarding the assignment. A variable is assigned automatically to an appropriate data type. For example, Python automatically assigns a variable to a string data-type, if an input or value is given that contains letters or words. Values of the same type can be manipulated together.
+
+#Casting
+
+ In Python, casting refers to the process of converting a variable from one data type to another.
+Type Casting is the method to convert the Python variable datatype into a certain data type in order to perform the required operation by users. In this article, we will see the various techniques for typecasting
+Integer Casting (int()): It is used to convert a value to an integer data type.
+Float Casting (float()): It is used to convert a value to a floating-point number.
+String Casting (str()): It is used to convert a value to a string.
+
+#Data Types
+
+In programming, data type is an important concept.
+
+Variables can store data of different types, and different types can do different things.
+
+Python has the following data types built-in by default, in these categories:
+
+Text Type: str
+Numeric Types: int, float, complex
+Sequence Types: list, tuple, range
+Mapping Type: dict
+Set Types: set, frozenset
+Boolean Type: bool
+Binary Types: bytes, bytearray, memoryview
+None Type: NoneType
+
+#Operators
+Operators are defined as special symbols or keywords used to perform operations on variables and values. They test conditions and manipulate values. When different data type are compared , they are never equal however different numerical types like int and float can be equal.
+The <, <=, > and >= operators raise a TypeError exception when any operand is a complex number if the objects are different types that cannot be compared to one another, or where there is no defined ordering.
+
+he % operator is used as the modulo operator. It returns the remainder of the division operation between two numbers. For example, a % b represents the remainder when a is divided by b.
+the abs() function is used to obtain the absolute value of a number. The absolute value of a number is its distance from zero on the number line, regardless of its direction. For example, the absolute value of both -5 and 5 is 5.
+
+the // operator represents floor division. Floor division performs division where the result is rounded down to the nearest whole number. For example, a // b will result in the quotient of a divided by b, rounded down to the nearest integer.
+a = 10
+b = 3
+result = a // b
+print(result) # Output: 3 (because 10 divided by 3 equals 3.333..., rounded down to 3)
+
+the int() function is used to convert a string to an integer. When you pass a string containing a numerical value to the int() function, it converts the string to an integer.
+string_num = "776"
+integer_num = int(string_num)
+print(integer_num) # Output: 776
+
+the float() function is used to convert a string or a number to a floating-point number (decimal number). When you pass a string containing a numerical value to the float() function, it converts the string to a floating-point number.
+string_num = "5.4"
+float_num = float(string_num)
+print(float_num) # Output: 5.4
+
+the complex() function is used to create a complex number. A complex number is a number that comprises both a real part and an imaginary part. In the function complex(a, b), a represents the real part, and b represents the imaginary part.
+real_part = 3
+imaginary_part = 4
+complex_number = complex(real_part, imaginary_part)
+print(complex_number) # Output: (3+4j)
+
+the divmod(a, b) function returns a tuple containing the quotient and the remainder of dividing a by b. It performs both integer division and modulus operation in a single step.
+quotient, remainder = divmod(8, 5)
+print("Quotient:", quotient) # Output: 1 (8 divided by 5 equals 1 with a remainder of 3)
+print("Remainder:", remainder) # Output: 3
+
+the pow(a, b) function is used to compute the power of a number. It returns the value of a raised to the power of b.
+Here's how you can use the pow() function:
+result = pow(2, 3)
+print(result) # Output: 8 (2 raised to the power of 3 equals 8)
+
