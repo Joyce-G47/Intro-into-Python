@@ -1,1 +1,115 @@
+Inheritance is a fundamental concept in object-oriented programming (OOP) that allows a new class (subclass/derived class) to inherit attributes and methods from an existing class (base class/parent class). This promotes code reuse and helps create a hierarchy of classes.
+My own views on inheritance
+ Python supports single and multiple inheritance, allowing a class to inherit from more than one base class. It allows us to access the methods of base class to reuse the code from existing class in a new class which is also easy to write and read. This feature provides flexibility in creating complex class hierarchies and incorporating functionality from multiple sources.
 
+The attributes and methods of the base class are inherited by the derived class, reducing the need to rewrite or duplicate code.
+It allows you to model relationships between objects and create a structure that reflects the real-world relationships between entities.
+Daily Notes - Inheritance - Videos
+ Python supports single and multiple inheritance, allowing a class to inherit from more than one base class. It allows us to access the methods of base class to reuse the code from existing class in a new class which is also easy to write and read. This feature provides flexibility in creating complex class hierarchies and incorporating functionality from multiple sources.
+
+The attributes and methods of the base class are inherited by the derived class, reducing the need to rewrite or duplicate code.
+It allows you to model relationships between objects and create a structure that reflects the real-world relationships between entities.
+Daily Notes - Activity 1 - Explaining Inheritance
+ Benefits of Inheritance
+
+Code Reusability:
+
+Inheritance allows you to reuse code from an existing class in a new class. The attributes and methods of the base class are inherited by the derived class, reducing the need to rewrite or duplicate code.
+Logical Organization:
+
+Inheritance helps in organizing classes in a logical hierarchy. It allows you to model relationships between objects and create a structure that reflects the real-world relationships between entities.
+Ease of Maintenance:
+
+When changes are made to the base class, those changes automatically apply to all derived classes. This makes maintenance easier as modifications or updates only need to be made in one place.
+Polymorphism:
+
+Inheritance supports polymorphism, where objects of different classes can be treated as objects of a common base class. This allows for more flexible and generic coding.
+Method Overriding:
+
+Derived classes can provide their own implementation of methods inherited from the base class. This feature is known as method overriding and allows customization of behavior in the derived class.
+Encapsulation:
+
+Inheritance, along with other OOP principles like encapsulation, helps in creating modular and encapsulated code. It allows you to hide the internal details of the base class while exposing a well-defined interface.
+Multiple Inheritance:
+
+Python supports multiple inheritance, allowing a class to inherit from more than one base class. This feature provides flexibility in creating complex class hierarchies and incorporating functionality from multiple sources.
+Dynamic Binding:
+
+Python supports dynamic binding, which means that the method called on an object is determined at runtime. This allows you to write more flexible and adaptable code.
+
+
+The super() function can be used to call a method from the base class within the derived class.
+
+A derived class can override (provide its own implementation for) methods of the base class.
+
+Multiple inheritance is possible, where a class inherits from more than one base class.
+
+Inheritance is a powerful tool, but it should be used judiciously to create a logical and manageable class hierarchy
+Daily Notes - Private Variables
+ In Python, there is a convention to indicate that a variable is private by prefixing its name with an underscore (_). However, it's important to note that this is just a convention, and it doesn't enforce true encapsulation or prevent access from outside the class. Python doesn't have a strict mechanism for enforcing private variables like some other programming languages do.
+Daily Notes - Videos - Private Variables
+ In Python, there is a convention to indicate that a variable is private by prefixing its name with an underscore (_). However, it's important to note that this is just a convention, and it doesn't enforce true encapsulation or prevent access from outside the class. Python doesn't have a strict mechanism for enforcing private variables like some other programming languages do.
+Daily Notes - Activity 2 - Private Variables
+ The use of private variables in Python, indicated by a single leading underscore (_) as a convention, offers several benefits in terms of code organization, encapsulation, and code maintenance.
+
+class MyClass:
+def __init__(self):
+self._my_private_variable = 10
+
+def get_private_variable(self):
+return self._my_private_variable
+
+def set_private_variable(self, value):
+self._my_private_variable = value
+
+# Create an instance of the class
+obj = MyClass()
+
+# Access the private variable directly (even though it's not recommended)
+print(obj._my_private_variable) # Output: 10
+
+# Access the private variable using getter method
+print(obj.get_private_variable()) # Output: 10
+
+# Modify the private variable using setter method
+obj.set_private_variable(20)
+
+# Access the modified private variable using getter method
+print(obj.get_private_variable()) # Output: 20
+
+
+
+Iterators and generators
+
+Iterators and generators are constructs that facilitate efficient and memory-friendly iteration over a sequence of elements. They are used to generate values on-the-fly, rather than creating the entire sequence in memory at once
+
+Iterators:
+An iterator is an object that represents a stream of data. It must implement two methods: __iter__() and __next__(). The __iter__() method returns the iterator object itself, and __next__() returns the next value from the iterator. When there are no more elements, __next__() raises the StopIteration exception.
+
+Generators:
+Generators are a concise and memory-efficient way to create iterators. They are defined using a function with the yield keyword. When the generator function is called, it returns a generator object, and the execution is paused at the yield statement. The next time the generator's __next__() method is called, it resumes execution from where it was paused.
+
+Generators offer several advantages:
+
+They are more memory-efficient as they generate values on-the-fly.
+They allow for lazy evaluation, producing values only when requested.
+They can represent infinite sequences without using infinite memory.
+
+
+Generator expressions
+
+Generator expressions provide a concise and memory-efficient way to create generators.
+They are similar to list comprehensions, but instead of creating a list, they create an iterable generator object. Generator expressions use parentheses () instead of square brackets [].
+
+
+Redirect error output and handle program termination
+
+We can redirect error output and handle program termination using several techniques. Here, we'll cover two primary mechanisms:
+using sys.stderr for error output redirection and using the sys.exit() function for program termination.
+
+Error Output Redirection with sys.stderr:
+The sys.stderr object is part of the sys module in Python and is used to redirect error output. You can replace the default error output with your own stream (e.g., a file) to capture error messages
+
+Program Termination with sys.exit():
+The sys.exit() function is used to terminate a program. It raises the SystemExit exception, and if not caught, it will terminate the program. 
+You can also provide an exit status code as an argument to indicate the reason for termination.
